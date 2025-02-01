@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect("mongodb://localhost:27017/datas")
+mongoose.connect("mongodb+srv://maxcleetus:UswKIaMQTEog5RCS@datas.vei9u.mongodb.net/datas?retryWrites=true&w=majority&appName=datas")
 .then(()=>{
     console.log("mongodb-connected")
 })
@@ -18,5 +18,5 @@ const LogInSchema =new mongoose.Schema({
     }
 })
 
-const datal = new mongoose.model("dataaas",LogInSchema)
+const datal = new mongoose.model("list",LogInSchema)
 module.exports=datal
